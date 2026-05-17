@@ -1,0 +1,212 @@
+/* ── Google Fonts import for JetBrains Mono ── */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ── Custom color tokens ── */
+:root,
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #b0d530;
+  --md-primary-fg-color--light: #c4e850;
+  --md-primary-fg-color--dark:  #8aaa1f;
+  --md-accent-fg-color:         #b0d530;
+
+  /* Background */
+  --md-default-bg-color:        #0c0c0c;
+  --md-default-bg-color--light: #111111;
+  --md-default-bg-color--dark:  #080808;
+
+  /* Sidebar */
+  --md-sidebar-bg-color:        #0e0e0e;
+
+  /* Nav header */
+  --md-header-bg-color:         #0c0c0c;
+
+  /* Code blocks */
+  --md-code-bg-color:           #111111;
+
+  /* Text */
+  --md-default-fg-color:        #e0e0e0;
+  --md-default-fg-color--light: #aaaaaa;
+  --md-default-fg-color--dark:  #ffffff;
+
+  /* Font override */
+  --md-text-font:               "JetBrains Mono", monospace;
+  --md-code-font:               "JetBrains Mono", monospace;
+}
+
+/* ── Force background on all surfaces ── */
+body,
+.md-main,
+.md-content,
+.md-sidebar,
+.md-sidebar__scrollwrap {
+  background-color: #0c0c0c !important;
+}
+
+.md-header {
+  background-color: #0c0c0c !important;
+  border-bottom: 1px solid #1e1e1e;
+  box-shadow: none;
+}
+
+.md-tabs {
+  background-color: #0c0c0c !important;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+/* ── Site name / logo text in nav ── */
+.md-header__title,
+.md-header__topic,
+.md-ellipsis {
+  font-family: "JetBrains Mono", monospace !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  color: #b0d530 !important;
+}
+
+/* ── Nav tabs ── */
+.md-tabs__link {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.78rem;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1;
+  color: #b0d530 !important;
+}
+
+/* ── Sidebar nav items ── */
+.md-nav__link {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.8rem;
+}
+
+.md-nav__link--active,
+.md-nav__link:hover {
+  color: #b0d530 !important;
+}
+
+/* ── Body content ── */
+.md-content__inner {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+/* ── Headings ── */
+.md-content h1,
+.md-content h2,
+.md-content h3,
+.md-content h4 {
+  font-family: "JetBrains Mono", monospace !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.md-content h1 { color: #b0d530; }
+.md-content h2 { color: #d0d0d0; border-bottom: 1px solid #1e1e1e; padding-bottom: 0.3em; }
+.md-content h3 { color: #b0b0b0; }
+
+/* ── Tables ── */
+.md-typeset table:not([class]) {
+  border: 1px solid #1e1e1e;
+  font-size: 0.82rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #111111;
+  color: #b0d530;
+  font-weight: 700;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background-color: #111111;
+}
+
+/* ── Code blocks ── */
+.md-typeset pre,
+.md-typeset code {
+  background-color: #111111 !important;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+/* ── Admonitions ── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left-color: #b0d530;
+  background-color: #0f0f0f;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(176, 213, 48, 0.08) !important;
+}
+
+/* ── Search bar ── */
+.md-search__input {
+  background-color: #111111 !important;
+  border: 1px solid #222222;
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.82rem;
+  color: #e0e0e0 !important;
+}
+
+.md-search__input::placeholder {
+  color: #555555 !important;
+}
+
+.md-search-result {
+  background-color: #0f0f0f !important;
+}
+
+/* ── GitHub icon in header ── */
+.md-header__source {
+  color: #e0e0e0 !important;
+}
+
+.md-header__source:hover {
+  color: #b0d530 !important;
+}
+
+/* ── Footer ── */
+.md-footer {
+  background-color: #0a0a0a !important;
+  border-top: 1px solid #1e1e1e;
+}
+
+.md-footer-nav__link:hover {
+  color: #b0d530 !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0c0c0c; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #b0d530; }
+
+/* ── Links ── */
+.md-typeset a {
+  color: #b0d530;
+  text-decoration: none;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+  color: #c4e850;
+}
+
+/* ── Prev / Next footer buttons ── */
+.md-footer__link {
+  font-family: "JetBrains Mono", monospace !important;
+  font-size: 0.78rem;
+}
