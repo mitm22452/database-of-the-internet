@@ -28,7 +28,6 @@ theme:
     - content.action.edit
   icon:
     repo: fontawesome/brands/github
-  custom_dir: overrides
 
 extra_css:
   - stylesheets/extra.css
