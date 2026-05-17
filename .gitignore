@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+.venv/
+env/
+temp/
+
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+create.py
+
+# OS
+.DS_Store
+Thumbs.db
+
